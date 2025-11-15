@@ -61,7 +61,7 @@ export default async function handler(req) {
             
             await resend.emails.send({
               // IMPORTANT: 'from' address ko Resend dashboard mein verify karna hoga
-              from: 'alert@yourdomain.com', // Example: 'alert@sslmonitor.com'
+              from: 'onboarding@resend.dev', // Example: 'alert@sslmonitor.com'
               to: email,
               subject: `URGENT: Your SSL for ${site} is expiring soon!`,
               html: `
